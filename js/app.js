@@ -1,5 +1,6 @@
 // helpers
-
+// alert("sdfdfghwfgdfxgfsdx");
+// window.prompt("quel est votre age?");
 function showPokemon(event) {
     // console.log(event.target.textContent);
     console.log(event.currentTarget);
@@ -87,7 +88,7 @@ pagination.setAttribute("class", "pagination");
 container.appendChild(pagination);
 // pagination avec listjs
 var monkeyList = new List('pokeContainer', {
-    valueNames: ['pokeNom'],
+    valueNames: ['pokemon'],
     page: 12,
     pagination: true
 });

@@ -3,7 +3,7 @@ console.log("je suis dans le profil");
 // Etape I = Récupération de l'id
 // passer l'url de la page dans une variable
 var url = window.location.href;
-
+console.log(url);
 // je récupère les search params
 var params = (new URL(document.location)).searchParams;
 
@@ -28,6 +28,7 @@ if (req.status === 200) {
     // console.log(typeof req.responseText);
     // transformer une chaine en json 
     var response = JSON.parse(req.responseText);
+    console.log(response);
     var monPokemon = response.card;
 
     console.log(monPokemon);
